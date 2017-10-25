@@ -38,6 +38,8 @@ struct genl_family vrouter_genl_family = {
     .netnsok    =   true,
 };
 
+/* This becomes the group id 0x4 since group id allocation starts at */
+/* 0x4 and it is the only group for this family */
 struct genl_multicast_group vrouter_genl_groups[] = {
   { .name = "VRouterGroup" },
 };
